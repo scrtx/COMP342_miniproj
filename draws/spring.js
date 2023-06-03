@@ -1,3 +1,4 @@
+//Draws a line representing the spring.
 function drawSpring(x, y) {
   let pointsArray = [];
   let [startX, startY] = [x, 1];

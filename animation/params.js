@@ -1,9 +1,11 @@
 var t = 0; //Time
 var A = 0.9; //Amplitude
-var b = 0.5; // Damping constant
-var m = 3; //Mass of block 
-var phase = 0;// Math.PI;//Phase of system
-var w = 1;//Angular Frequency
+var b = 0.3; // Damping constant
+// var b = 1;
+// var m = 3; //Mass of block 
+var m = 10;
+var phase = 0 //Phase of system
+var w = 1; //Angular Frequency
 
 var ampSpan = document.getElementById("A_data");
 var BSpan = document.getElementById("B_data");

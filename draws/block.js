@@ -1,3 +1,4 @@
+//Draws a Square block which oscillates.
 function drawBlock(x, y, l){
     let pointsArray = [];
     pointsArray.push(x, y);

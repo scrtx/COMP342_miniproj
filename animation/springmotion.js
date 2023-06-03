@@ -1,3 +1,4 @@
+//Draws the spring and block every frame, updating t (time)
 function animateSpring(){
     posY = A * Math.exp((-b*t)/(2*m)) * Math.cos(w*t + phase);
     posX = -0.1;
@@ -9,6 +10,6 @@ function animateSpring(){
     GLINIT();
     drawBlock(posX, posY, l);
     
-    t += 0.1;
+    t += 0.1; // time
     requestAnimationFrame(animateSpring);
 }

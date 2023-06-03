@@ -1,3 +1,4 @@
+//List of files in project and instert them as <script> element in html file
 let scriptList = [
     "./glsetup.js",
     "./animation/springmotion.js",
@@ -14,6 +15,7 @@ scriptList.forEach(function (s) {
   document.body.appendChild(script);
 });
 
+//called when <body> is loaded.
 function onLoad() {
     GLINIT();
     animateSpring();

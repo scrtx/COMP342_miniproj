@@ -3,7 +3,7 @@ const canvas = document.querySelector("#canvas");
 const canvasHeight = canvas.height;
 const canvasWidth = canvas.width;
 
-//Initialize WebGL
+//Define vertex buffer, vertex shader, fragment shaders
 var gl;
 var vertexBuffer;
 var vertCode;
@@ -16,7 +16,7 @@ var White = `void main() {gl_FragColor = vec4(1, 1, 1, 1);}`;
 var Gray = `void main() {gl_FragColor = vec4(0.5, 0.5, 0.5, 1);}`;
 var Black = `void main() {gl_FragColor = vec4(0, 0, 0, 1);}`;
 
-
+//Initialize WebGL
 function GLINIT() {
     gl = canvas.getContext("webgl");
     if (!gl) {
