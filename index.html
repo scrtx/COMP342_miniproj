@@ -2,14 +2,36 @@
 <html lang="en">
 <head>
     <title>Mini Project</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body onload="onLoad()">
-    <h1 class="title" id="title">Spring System</h1>
-
-    <canvas class="canvas" id="canvas" height="500" width="500" style="background: gray">
-    </canvas>
-
-    <br/>
+    <div class = "grid-container">
+      <div class = "left-grid">
+        <h1 class="title">Mass Spring System</h1>
+        <h4 class="title">By Sankalpa Satyal</h4>
+        <h4 class="title">CE III-II | Roll No.49</h4>
+        <canvas class="canvas" id="canvas" height="500" width="500" style="background: rgb(241, 245, 128)">
+        </canvas>
+      </div>
+      <div class="right-grid">
+        <div class="text-box">
+          <span>Amplitude = </span><span id="A_data"></span>
+        </div>
+        <div class="text-box">
+          <span>Damping Coefficient = </span><span  id="B_data"></span>
+        </div>
+        <div class="text-box">
+          <span>Mass of Body = </span><span id="m_data"></span>
+        </div> 
+        <div class="text-box">
+          <span>Angular Frequency = </span><span id="w_data"></span>
+        </div>
+        <div class="text-box">
+          <span>Phase = </span><span id="phi_data"></span>
+        </div>
+      </div>
+    </div>
+      <br/>
     <div style="text-align: center;">
       <i><b>Canvas is Above This Text.</b></i>
     </div>

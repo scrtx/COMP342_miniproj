@@ -14,6 +14,8 @@ var Blue = `void main() {gl_FragColor = vec4(0, 0, 1, 1);}`;
 var Yellow = `void main() {gl_FragColor = vec4(1, 1, 0, 1);}`;
 var White = `void main() {gl_FragColor = vec4(1, 1, 1, 1);}`;
 var Gray = `void main() {gl_FragColor = vec4(0.5, 0.5, 0.5, 1);}`;
+var Black = `void main() {gl_FragColor = vec4(0, 0, 0, 1);}`;
+
 
 function GLINIT() {
     gl = canvas.getContext("webgl");
@@ -59,4 +61,3 @@ function DrawObject(object, objectSize, fragCode, vertices, start, end) {
       gl.drawArrays(object, i, objectSize);
     }
 }
-  

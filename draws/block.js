@@ -1,5 +1,4 @@
-function drawBlock(x, y){
-    let l = 0.15;
+function drawBlock(x, y, l){
     let pointsArray = [];
     pointsArray.push(x, y);
     pointsArray.push(x, y-l);
